@@ -5,6 +5,7 @@ export default function Animal() {
     const [listAnimal, setListAnimal] = useState();
     // let param = useParams();
     // let value = "";
+    let checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
 
     useEffect(() => {
         fetch("http://localhost:8000/animal")
@@ -17,26 +18,36 @@ export default function Animal() {
     }, []);
 
     function renderListAnimal(e) {
-        if (listAnimal) {
-            return listAnimal.map((value) => {
-                console.log(value);
-                return (
-                    <>
-                        <li>
-                            <div className="item-animal">
-                                <img src={value["image"]} alt="img-animal" />
-                                <div className="item-animal-infor">
-                                    <h2>{value["name"]}</h2>
-                                    <span>
-                                        Môi trường sống: {value["habitat"]}
-                                    </span>
-                                    <p>Mô tả: {value["description"]}</p>
+        if (checkLogin) {
+            if (listAnimal) {
+                return listAnimal.map((value) => {
+                    return (
+                        <>
+                            <li>
+                                <div className="item-animal">
+                                    <img
+                                        src={value["image"]}
+                                        alt="img-animal"
+                                    />
+                                    <div className="item-animal-infor">
+                                        <h2>{value["name"]}</h2>
+                                        <span>
+                                            Môi trường sống: {value["habitat"]}
+                                        </span>
+                                        <p>Mô tả: {value["description"]}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </>
-                );
-            });
+                            </li>
+                        </>
+                    );
+                });
+            }
+        } else {
+            return (
+                <>
+                    <h1>You not login. Please login!</h1>
+                </>
+            );
         }
     }
 
