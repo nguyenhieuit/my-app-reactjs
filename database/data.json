@@ -1,0 +1,88 @@
+{
+    "categoryanimal":[
+        {
+            "id":1,
+            "name":"fish"
+        },
+        {
+            "id":2,
+            "name":"bird"
+        }
+    ],
+    "animal":[
+        {
+            "id":1,
+            "name":"Cá Chép",
+            "habitat":"Nước ngọt",
+            "description":"Cá chép, có tên khoa học là Cyprinus carpio, thuộc họ Cá chép (Cyprinidae) và là loài cá có mối quan hệ họ hàng với cá vàng. Chiều dài của cá chép có thể lên đến 1.2m và nặng đến 37.3kg, thậm chí tuổi thọ đến 47 năm.",
+            "image":"https://e.khoahoc.tv/photos/image/2021/09/29/ca-chep.jpg"
+        },
+        {
+            "id":2,
+            "name":"Cá Mú",
+            "habitat":"Nước mặn",
+            "description":"Cá mú (hay còn gọi là cá Song) có kích thước dài khoảng 10 - 270cm, thân trơn to chắc, miệng to, thuôn dài về phía đuôi, mình dẹp, vây lưng hình chữ V và có khoảng 7 - 12 gai. Hơn nữa, cá mú còn có hàm răng sắc nhọn, hàm dưới hơi nhô dài ra phía trước.",
+            "image":"https://img.meta.com.vn/Data/image/2022/02/14/cac-loai-ca-3.jpg"
+        },
+        {
+            "id":3,
+            "name":"Cá Hồi",
+            "habitat":"Nước mặn",
+            "description":"Cá hồi là tên chung cho nhiều loài cá thuộc họ Salmonidae. Nhiều loại cá khác cùng họ được gọi là trout (cá hồi); sự khác biệt thường được cho là cá hồi salmon di cư còn cá hồi trout không di cư, nhưng sự phân biệt này không hoàn toàn chính xác. Cá hồi sống dọc các bờ biển tại cả Bắc Đại Tây Dương (các họ di cư Salmo salar) và Thái Bình Dương (khoảng sáu họ của giống Oncorhynchus), và cũng đã từng được đưa tới Hồ lớn ở Bắc Mỹ.",
+            "image":"https://afamilycdn.com/thumb_w/650/150157425591193600/2020/6/18/20160922091307-ca-hoi-15924508491682143151880.jpg"
+        },
+        {
+            "id":4,
+            "name":"Cá Rô Đồng",
+            "habitat":"Nước ngọt",
+            "description":"Cá rô đồng có tên khoa học là Anabas testudineus, thuộc họ Cá rô đồng và sống được trong môi trường nước ngọt và nước lợ như ruộng, ao, đầm, mương rẫy,… Chúng có màu xanh cho đến màu xám nhạt, trong đó phần bụng có màu sáng hơn phần lưng. Các gờ của vảy và vây có màu sáng. Nắp mang cá hình răng cưa, răng chắc và sắc, xếp thành dẫy trên hai hàm. Kích thước có thể dài đến 250mm. Con cá rô đực thường có thân hình thon dài hơn con cái.",
+            "image":"https://e.khoahoc.tv/photos/image/2021/09/29/ca-ro-dong.jpg"
+        },
+        {
+            "id":5,
+            "name":"Chim chích chòe",
+            "habitat":"Vùng nhiệt đới",
+            "description":"Chích chòe than có tên khoa học là Copsychus Saularis là một loài chim có dạng chim sẻ nhỏ thuộc họ đớp ruồi cựu thế giới. Đây là một giống chim rừng hiền lành và ưa khí hậu ấm áp. Đây là loài chim có lợi cho nhà nông, hót hay nên được ưa chuộng để làm vật nuôi trong nhà.",
+            "image":"https://traichomeo.com/wp-content/uploads/2022/03/chim-chich-choe.jpg"
+        }
+    ],
+    "fish":[
+        {
+            "id":1,
+            "name":"Cá Chép",
+            "habitat":"Nước ngọt",
+            "description":"Cá chép, có tên khoa học là Cyprinus carpio, thuộc họ Cá chép (Cyprinidae) và là loài cá có mối quan hệ họ hàng với cá vàng. Chiều dài của cá chép có thể lên đến 1.2m và nặng đến 37.3kg, thậm chí tuổi thọ đến 47 năm.",
+            "image":"https://e.khoahoc.tv/photos/image/2021/09/29/ca-chep.jpg"
+        },
+        {
+            "id":2,
+            "name":"Cá Mú",
+            "habitat":"Nước mặn",
+            "description":"Cá mú (hay còn gọi là cá Song) có kích thước dài khoảng 10 - 270cm, thân trơn to chắc, miệng to, thuôn dài về phía đuôi, mình dẹp, vây lưng hình chữ V và có khoảng 7 - 12 gai. Hơn nữa, cá mú còn có hàm răng sắc nhọn, hàm dưới hơi nhô dài ra phía trước.",
+            "image":"https://img.meta.com.vn/Data/image/2022/02/14/cac-loai-ca-3.jpg"
+        },
+        {
+            "id":3,
+            "name":"Cá Hồi",
+            "habitat":"Nước mặn",
+            "description":"Cá hồi là tên chung cho nhiều loài cá thuộc họ Salmonidae. Nhiều loại cá khác cùng họ được gọi là trout (cá hồi); sự khác biệt thường được cho là cá hồi salmon di cư còn cá hồi trout không di cư, nhưng sự phân biệt này không hoàn toàn chính xác. Cá hồi sống dọc các bờ biển tại cả Bắc Đại Tây Dương (các họ di cư Salmo salar) và Thái Bình Dương (khoảng sáu họ của giống Oncorhynchus), và cũng đã từng được đưa tới Hồ lớn ở Bắc Mỹ.",
+            "image":"https://afamilycdn.com/thumb_w/650/150157425591193600/2020/6/18/20160922091307-ca-hoi-15924508491682143151880.jpg"
+        },
+        {
+            "id":4,
+            "name":"Cá Rô Đồng",
+            "habitat":"Nước ngọt",
+            "description":"Cá rô đồng có tên khoa học là Anabas testudineus, thuộc họ Cá rô đồng và sống được trong môi trường nước ngọt và nước lợ như ruộng, ao, đầm, mương rẫy,…",
+            "image":"https://e.khoahoc.tv/photos/image/2021/09/29/ca-ro-dong.jpg"
+        }
+    ],
+    "bird":[
+        {
+            "id":5,
+            "name":"Chim chích chòe",
+            "habitat":"Vùng nhiệt đới",
+            "description":"Chích chòe than có tên khoa học là Copsychus Saularis là một loài chim có dạng chim sẻ nhỏ thuộc họ đớp ruồi cựu thế giới. Đây là một giống chim rừng hiền lành và ưa khí hậu ấm áp. Đây là loài chim có lợi cho nhà nông, hót hay nên được ưa chuộng để làm vật nuôi trong nhà.",
+            "image":"https://traichomeo.com/wp-content/uploads/2022/03/chim-chich-choe.jpg"
+        }
+    ]
+}
