@@ -1,12 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
-    const login = {
-        email: "monsterhieupke@gmail.com",
-        password: "12345678",
-    };
+    const [getuser, setUser] = useState();
     const [getItemLogin, setItemLogin] = useState({
         email: "",
         password: "",
@@ -15,6 +12,16 @@ export default function Login() {
     const ktMail =
         /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     const navigate = useNavigate();
+
+    useEffect(() => {
+        fetch("http://localhost:8000/useraccount")
+            .then((res) => {
+                return res.json();
+            })
+            .then((data) => {
+                setUser(data);
+            });
+    }, []);
 
     function hanldeIn(e) {
         const nameIn = e.target.name;
@@ -50,24 +57,21 @@ export default function Login() {
         } else {
             setItemErr("");
             if (
-                !getItemLogin.email.includes(login.email) ||
-                !getItemLogin.password.includes(login.password)
+                getuser.email !== getItemLogin.email ||
+                getuser.password !== getItemLogin.password
             ) {
                 kt = false;
                 errSubmit.checkInclude =
                     "Email address or password is not exist or not correct";
             } else {
                 errSubmit.checkInclude = "";
+                setItemErr("");
             }
             if (!kt) {
                 setItemErr(errSubmit);
             } else {
                 errSubmit.checkInclude = "";
                 setItemErr("");
-                const dataPost = {
-                    email: getItemLogin.email,
-                    password: getItemLogin.pass,
-                };
                 alert("Login is success");
                 navigate("/Animal");
                 localStorage.setItem(
@@ -90,7 +94,7 @@ export default function Login() {
                             type="text"
                             name="email"
                             onChange={hanldeIn}
-                            placeholder=" Your email"
+                            placeholder=" Enter your email"
                         />
                         <span>{itemErr.email}</span>
                         <label>Your password:</label>
@@ -98,7 +102,7 @@ export default function Login() {
                             type="password"
                             name="password"
                             onChange={hanldeIn}
-                            placeholder=" Your password"
+                            placeholder=" Enter your password"
                         />
                         <span>{itemErr.password}</span>
                     </div>

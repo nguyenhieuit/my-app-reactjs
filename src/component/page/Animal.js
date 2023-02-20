@@ -20,7 +20,7 @@ export default function Animal() {
     function renderListAnimal(e) {
         if (checkLogin) {
             if (listAnimal) {
-                return listAnimal.map((value) => {
+                return listAnimal.map((value, key) => {
                     return (
                         <>
                             <li>
